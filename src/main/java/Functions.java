@@ -8,20 +8,20 @@ public class Functions {
         int result = 0;
         int oddCounter = 0;
         int evenCounter = 0;
-        int[] oddArray = new int[arrayOfIntegers.length];
-        int[] evenArray = new int[arrayOfIntegers.length];
 
 
+        //check if searching odd or even number
         for (int i = 0; i < arrayOfIntegers.length; i++){
             if (arrayOfIntegers[i] % 2 != 0){
                 oddCounter++;
             }
-
             if (arrayOfIntegers[i] % 2 == 0){
                 evenCounter++;
             }
         }
 
+
+        //print out number
         if (oddCounter < evenCounter) {
             for (int i = 0; i < arrayOfIntegers.length; i++) {
                 if (arrayOfIntegers[i] % 2 != 0) {
