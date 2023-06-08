@@ -14,20 +14,29 @@ public class Functions {
 
         for (int i = 0; i < arrayOfIntegers.length; i++){
             if (arrayOfIntegers[i] % 2 != 0){
-                oddArray[i] = arrayOfIntegers[i];
                 oddCounter++;
             }
 
             if (arrayOfIntegers[i] % 2 == 0){
-                evenArray[i] = arrayOfIntegers[i];
                 evenCounter++;
             }
         }
 
-        if (oddCounter < evenCounter){
-            result = oddArray[evenCounter];
+        if (oddCounter < evenCounter) {
+            for (int i = 0; i < arrayOfIntegers.length; i++) {
+                if (arrayOfIntegers[i] % 2 != 0) {
+                    result = arrayOfIntegers[i];
+                }
+            }
         } else {
-            result = evenArray[oddCounter];
+                for (int i = 0; i < arrayOfIntegers.length; i++){
+                    if (arrayOfIntegers[i] % 2 == 0){
+                        result = arrayOfIntegers[i];
+                }
+            }
+
+
+
         }
 
 
